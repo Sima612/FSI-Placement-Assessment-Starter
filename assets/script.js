@@ -39,8 +39,10 @@ document.getElementById('qty-total').textContent = total;
 
 document.getElementById('minus-cc').addEventListener('click', function() {
     console.log('Chocolate Chip - button was clicked!')
+    if (cc > 0 ) {
     cc--;
     total--;
+    }
 document.getElementById('qty-cc').textContent = cc;
 document.getElementById('qty-total').textContent = total;
 })
@@ -55,8 +57,10 @@ document.getElementById('qty-total').textContent = total;
 
 document.getElementById('minus-sugar').addEventListener('click', function() {
     console.log('Sugar Sprinkle - button was clicked!')
+    if (sugar > 0 ) {
     sugar--;
     total--;
+    }
 document.getElementById('qty-sugar').textContent = sugar;
 document.getElementById('qty-total').textContent = total;
 })
